@@ -4,7 +4,7 @@
             links = $(this).find("a");
         
         links.each(function () {
-            $(this).clone().addClass("citations-js").text("").append(i + ". " + this.title + ", " + this.href).appendTo('#Citations');
+            $(this).clone().addClass("citations-js").text("").append("<p>" + i + ". " + this.title + ", " + this.href + "</p>").appendTo('#Citations');
             i++;
         });
     };
