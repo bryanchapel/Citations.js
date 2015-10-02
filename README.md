@@ -18,17 +18,25 @@ This is another paragraph. <a href="http://www.chasemountains.com" title="How Ma
 
 This is another paragraph. <a href="http://www.bryanchapel.com" title="Just One More">And this is a fifth link.</a>
 
+And Citations.js bottles up all the links, and sticks them into a div with an id of '#Citations'.
+
 <p>1. How To Train Your Dragon: 5 Simple Steps, http://www.google.com/</p>
 <p>2. Gumby Was A Pretty Stretchy Dude, http://www.yahoo.com/</p>
 <p>3. You Did What??, http://www.bing.com/</p>
 <p>4. How Many Links Are In This Article, Anyway?, http://www.chasemountains.com/</p>
 <p>5. Just One More, http://www.bryanchapel.com/</p>
 
-And Citations.js bottles up all the links, and sticks them into a div with an id of '#Citations'. You can put the div anywhere you like, but I think the best position is right after your main content area. This gives your reader easy access to all the resources you've linked to. You can style the links themselves by adding the class '.citations-js' to your stylesheet.
+You can put the div anywhere you like, but I think the best position is right after your main content area. This gives your reader easy access to all the resources you've linked to. You can style the links themselves by adding the class '.citations-js' to your stylesheet.
 
 The links are given a number in the order in which they appear in the article, and Citations.js uses your link's title and href attributes to display the links.
 
-This is very handy to stick into a template for blog posts, articles, etc, and will be a real treat for your readers.
-
+This is very handy to stick into a template for blog posts, articles, etc, and will be a real treat for your readers. To use it, simply stick this before the closing body tag: 
+```javascript
+  <script src="plugin.js" ></script>
+    <script>$(document).ready(function() {
+        $("#Main").citations();
+    });
+        </script>
+```
 It's very simple, but very helpful to your site's visitors. Sometimes, it's the little things that add up to a better experience for our users.
 
