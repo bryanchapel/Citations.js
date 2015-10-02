@@ -32,11 +32,13 @@ The links are given a number in the order in which they appear in the article, a
 
 This is very handy to stick into a template for blog posts, articles, etc, and will be a real treat for your readers. To use it, simply stick this before the closing body tag: 
 ```javascript
-  <script src="plugin.js" ></script>
+  <script src="citations.js" ></script>
     <script>$(document).ready(function() {
         $("#Main").citations();
     });
         </script>
 ```
+Where '#Main' is the id of the div or section of your main content.
+
 It's very simple, but very helpful to your site's visitors. Sometimes, it's the little things that add up to a better experience for our users.
 
